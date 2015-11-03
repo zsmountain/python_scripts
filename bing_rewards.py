@@ -42,7 +42,7 @@ LOGIN_PAGE = 'https://login.live.com'
 #PC Search
 browser = webdriver.Chrome()
 browser.get(LOGIN_PAGE)
-browser.find_element_by_name('login').send_keys(EMAIL)
+browser.find_element_by_name('loginfmt').send_keys(EMAIL)
 browser.find_element_by_name('passwd').send_keys(PWD)
 browser.find_element_by_id('idSIButton9').click()
 time.sleep(1)
@@ -75,7 +75,7 @@ options.add_argument('--user-agent=Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_1_1 l
 browser = webdriver.Chrome(chrome_options=options)
 
 browser.get(LOGIN_PAGE)
-browser.find_element_by_name('login').send_keys(EMAIL)
+browser.find_element_by_name('loginfmt').send_keys(EMAIL)
 browser.find_element_by_name('passwd').send_keys(PWD)
 browser.find_element_by_id('idSIButton9').click()
 time.sleep(1)
